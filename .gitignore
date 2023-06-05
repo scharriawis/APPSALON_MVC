@@ -5,4 +5,5 @@ gulpfile.js
 appsalon_mvc.sql
 package-lock.json
 package.json
+.DS_Store
 .env
