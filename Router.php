@@ -27,8 +27,7 @@ class Router
         // $rutas_protegidas = ['/admin', '/propiedades/crear', '/propiedades/actualizar', '/propiedades/eliminar', '/vendedores/crear', '/vendedores/actualizar', '/vendedores/eliminar'];
 
         // $auth = $_SESSION['login'] ?? null;
-
-        $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];   //Busca la url actual si es = '' asignale '/' en caso contrario asignale la url actual request_uri
+        $currentUrl = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
 
         if ($method === 'GET') {
