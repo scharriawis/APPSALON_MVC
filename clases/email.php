@@ -41,7 +41,7 @@ class Email{
         $content .= "<p><strong>Hola " . $this->nombre . " " . $this->apellido;
         $content .= " </strong> Has creado una cuenta en appSalon, ";
         $content .= "solo debes confirmarla en el siguiente enlace</P>";
-        $content .= "<p>Presiona aquí: <a href='http://localhost:3000/confirm-account?token="
+        $content .= "<p>Presiona aquí: <a href='charriacitas.domcloud.io?token="
          . $this->token . "' >Confirmar Cuenta</a></p>";
         $content .= "<p>Si no solicitaste el cambio, puedes ignorar el mensaje </p>";
         $content .= "</HTML";
