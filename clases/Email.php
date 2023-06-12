@@ -74,8 +74,8 @@ class Email{
         $content .= "<p><strong>Hola " . $this->nombre . " " . $this->apellido;
         $content .= " </strong> Has solicitado reestablecer tu password en appSalon, ";
         $content .= "sigue el siguiente enlace</P>";
-        $content .= "<p>Presiona aquí: <a href='http://localhost:3000/recover?token="
-         . $this->token . "' >Confirmar Cuenta</a></p>";
+        $content .= "<p>Presiona aquí: <a href=`${location.origin}/api/recover?token="
+         . $this->token . "` >Confirmar Cuenta</a></p>";
         $content .= "<p>Si no solicitaste el cambio, puedes ignorar el mensaje </p>";
         $content .= "</HTML";
         
