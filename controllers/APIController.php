@@ -13,7 +13,7 @@ class APIController{
         
     }
 
-    public static function guardar(Router $router){
+    public static function guardar(){
         //database table cita
         //Instanciamos la cita y capturamos los que haya en post
         $cita = new Cita($_POST);
