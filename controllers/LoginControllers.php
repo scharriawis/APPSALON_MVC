@@ -13,7 +13,6 @@ class LoginControllers{
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
             //Tomamos los datos qué envian los usuarios en form
             $auth = new User($_POST);
-            debuguear($auth);
             //Validar los campos obligatorios
             $alertas = $auth->validarLogin();
             if(empty($alertas)){
